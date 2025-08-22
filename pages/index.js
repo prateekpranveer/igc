@@ -44,12 +44,9 @@ export default function LoginPage() {
     
      <Head>
         <title>Instagram</title>
-        
-        <meta name="description" content="Write and organize your novel effortlessly." />
         <link rel="icon" href="/instagram-logo.png" />
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Instagram" />
-        <meta property="og:description" content="Write and organize your novel effortlessly." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://igc-two.vercel.app/" />
         <meta property="og:image" content="https://www.pexels.com/photo/elegant-coffee-setup-with-flowers-and-decor-30681794/" />

